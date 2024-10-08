@@ -1,0 +1,85 @@
+@import url('./styles.css');
+
+.feedback-form {
+  padding: 24px;
+  /* outline: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 408px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.feedback-form label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  font-size: 16px;
+  color: #2e2f42;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: border-color 340ms cubic-bezier(0.39, 0.46, 0.02, 0.86);
+}
+
+.feedback-form input {
+  height: 40px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.feedback-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 95px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #4e75ff;
+
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-right: auto;
+
+  transition: background-color 340ms cubic-bezier(0.39, 0.46, 0.02, 0.86);
+}
+
+.feedback-form input:is(:hover, :focus),
+.feedback-form textarea:is(:hover, :focus) {
+  border-color: #000;
+}
+
+.feedback-form button:is(:hover, :focus) {
+  background-color: #6c8cff;
+}
